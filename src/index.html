@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>html2canvas</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #container {
+        padding: 10px;
+        background: #f5da55;
+      }
+
+      #container figure {
+        margin: 10px auto;
+      }
+
+      .blank {
+        height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p>JavaScript HTML renderer</p>
+      <figure>
+        <img id="image"/>
+        <p>The script allows you to take "screenshots"</p>
+      </figure>
+      <p>
+        The script allows you to take "screenshots" of webpages or parts of it, directly on the
+        users browser. The screenshot is based on the DOM and as such may not be 100% accurate to
+        the real representation as it does not make an actual screenshot, but builds the screenshot
+        based on the information available on the page.
+      </p>
+    </div>
+    <div class="blank"></div>
+    <script src="/html2canvas/dist/html2canvas.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
